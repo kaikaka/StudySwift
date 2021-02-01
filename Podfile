@@ -23,6 +23,7 @@ target 'StudySwift' do
   pod 'EmptyDataSet-Swift'
   pod 'MBProgressHUD'
   pod 'MJRefresh'
+  pod 'Toast-Swift'
 
   # rxSwift 扩展
   pod 'RxSwiftExt'

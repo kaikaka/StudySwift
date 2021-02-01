@@ -19,8 +19,10 @@
 		3C44A10D25A0706B00FCC10A /* MineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44A10C25A0706B00FCC10A /* MineViewController.swift */; };
 		3C44A11C25A073B700FCC10A /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44A11B25A073B700FCC10A /* R.generated.swift */; };
 		3C44A12125A0760000FCC10A /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C44A12025A0760000FCC10A /* TabBarViewController.swift */; };
-		3C53792125AAA91F00BF7C25 /* ReverseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C53792025AAA91F00BF7C25 /* ReverseManager.swift */; };
-		3C53792B25AAD46F00BF7C25 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C53792925AAD46F00BF7C25 /* SDAVAssetExportSession.m */; };
+		3C64951B25C29B6600EDE84F /* UtilCoreNavigatorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */; };
+		3C64954425C2B21900EDE84F /* ToastExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64954325C2B21900EDE84F /* ToastExtension.swift */; };
+		3C64954C25C2B53700EDE84F /* UtilCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64954B25C2B53700EDE84F /* UtilCore.swift */; };
+		3C69DB8525C3F2A5008214C3 /* HouseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */; };
 		3C7B59EB25A1C334006DD208 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59EA25A1C334006DD208 /* AppRouter.swift */; };
 		5DDEFC5C89B668B343496022 /* Pods_StudySwift_StudySwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 290DDB2ED124A78DC1463DDF /* Pods_StudySwift_StudySwiftUITests.framework */; };
 		A11E4057A88E2820D9AEE575 /* Pods_StudySwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 816ACBD7631E6819133313D2 /* Pods_StudySwiftTests.framework */; };
@@ -68,10 +70,11 @@
 		3C44A10C25A0706B00FCC10A /* MineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineViewController.swift; sourceTree = "<group>"; };
 		3C44A11B25A073B700FCC10A /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		3C44A12025A0760000FCC10A /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		3C53792025AAA91F00BF7C25 /* ReverseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseManager.swift; sourceTree = "<group>"; };
 		3C53792825AAD46F00BF7C25 /* StudySwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StudySwift-Bridging-Header.h"; sourceTree = "<group>"; };
-		3C53792925AAD46F00BF7C25 /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
-		3C53792A25AAD46F00BF7C25 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
+		3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilCoreNavigatorMap.swift; sourceTree = "<group>"; };
+		3C64954325C2B21900EDE84F /* ToastExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastExtension.swift; sourceTree = "<group>"; };
+		3C64954B25C2B53700EDE84F /* UtilCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilCore.swift; sourceTree = "<group>"; };
+		3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRouter.swift; sourceTree = "<group>"; };
 		3C7B59EA25A1C334006DD208 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		6CC32B124E2CD1DBC9DCF376 /* Pods-StudySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StudySwift.release.xcconfig"; path = "Target Support Files/Pods-StudySwift/Pods-StudySwift.release.xcconfig"; sourceTree = "<group>"; };
 		816ACBD7631E6819133313D2 /* Pods_StudySwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StudySwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,6 +176,7 @@
 				3C44A0B825A06C2900FCC10A /* Controller */,
 				3C44A0B925A06C2900FCC10A /* Model */,
 				3C44A0BA25A06C2900FCC10A /* View */,
+				3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */,
 			);
 			path = House;
 			sourceTree = "<group>";
@@ -289,6 +293,8 @@
 		3C44A11125A0717200FCC10A /* SwiftBase */ = {
 			isa = PBXGroup;
 			children = (
+				3C64954225C2B1FF00EDE84F /* Expand */,
+				3C64951825C29B5A00EDE84F /* Util */,
 				3C7B59E925A1C319006DD208 /* Router */,
 				3C44A11225A0717200FCC10A /* Common */,
 				3C44A11325A0717200FCC10A /* Base */,
@@ -299,9 +305,6 @@
 		3C44A11225A0717200FCC10A /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				3C53792A25AAD46F00BF7C25 /* SDAVAssetExportSession.h */,
-				3C53792925AAD46F00BF7C25 /* SDAVAssetExportSession.m */,
-				3C53792025AAA91F00BF7C25 /* ReverseManager.swift */,
 				3C53792825AAD46F00BF7C25 /* StudySwift-Bridging-Header.h */,
 			);
 			path = Common;
@@ -312,6 +315,31 @@
 			children = (
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		3C64951825C29B5A00EDE84F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				3C64951925C29B5A00EDE84F /* Core */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		3C64951925C29B5A00EDE84F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */,
+				3C64954B25C2B53700EDE84F /* UtilCore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		3C64954225C2B1FF00EDE84F /* Expand */ = {
+			isa = PBXGroup;
+			children = (
+				3C64954325C2B21900EDE84F /* ToastExtension.swift */,
+			);
+			path = Expand;
 			sourceTree = "<group>";
 		};
 		3C7B59E925A1C319006DD208 /* Router */ = {
@@ -604,16 +632,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C64951B25C29B6600EDE84F /* UtilCoreNavigatorMap.swift in Sources */,
+				3C69DB8525C3F2A5008214C3 /* HouseRouter.swift in Sources */,
 				3C44A06C25A06B4D00FCC10A /* ViewController.swift in Sources */,
 				3C44A06825A06B4D00FCC10A /* AppDelegate.swift in Sources */,
 				3C44A10325A0704600FCC10A /* HouseViewController.swift in Sources */,
 				3C44A10825A0705500FCC10A /* DiscoverViewController.swift in Sources */,
-				3C53792125AAA91F00BF7C25 /* ReverseManager.swift in Sources */,
-				3C53792B25AAD46F00BF7C25 /* SDAVAssetExportSession.m in Sources */,
 				3C7B59EB25A1C334006DD208 /* AppRouter.swift in Sources */,
 				3C44A12125A0760000FCC10A /* TabBarViewController.swift in Sources */,
 				3C44A10D25A0706B00FCC10A /* MineViewController.swift in Sources */,
 				3C44A11C25A073B700FCC10A /* R.generated.swift in Sources */,
+				3C64954C25C2B53700EDE84F /* UtilCore.swift in Sources */,
+				3C64954425C2B21900EDE84F /* ToastExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
