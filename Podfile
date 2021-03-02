@@ -4,7 +4,8 @@
 target 'StudySwift' do
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-
+  
+  #root
   pod 'RxSwift' 
   pod 'RxCocoa'
   pod 'Alamofire' 
@@ -24,6 +25,8 @@ target 'StudySwift' do
   pod 'MBProgressHUD'
   pod 'MJRefresh'
   pod 'Toast-Swift'
+  pod 'SwiftDate'
+  pod 'CryptoSwift'
 
   # rxSwift 扩展
   pod 'RxSwiftExt'
