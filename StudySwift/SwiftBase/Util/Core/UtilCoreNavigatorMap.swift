@@ -8,6 +8,8 @@
 import UIKit
 import URLNavigator
 import Toast_Swift
+import RxSwift
+import RxCocoa
 
 public protocol NavProtocol {
     static var scheme:String { get set }
@@ -91,4 +93,25 @@ public struct UtilCoreNavigatorMap {
         }
     }
     
+}
+
+extension UIView {
+    //根据url处理跳转
+    public var rx_openUrl: AnyObserver<(url:String,param:[String:String]?)> {
+        return Binder(self) { view ,tr in
+            _ = tr.url.openURL(tr.param)
+        }.asObserver()
+    }
+}
+
+public func alertMsg(_ title:String = "提示", message:String?) -> Void {
+    _ = "alert".openURL(["title":title,"message":message ?? ""])
+}
+
+public func showMsg(_ message:String?) -> Void {
+    _ = "alerterror".openURL(["message":message ?? ""])
+}
+
+public func showMsg(_ codeMsg:Int) -> Void {
+    showMsg(UtilCore.alertMsg[codeMsg]?.msgTitle ?? "")
 }

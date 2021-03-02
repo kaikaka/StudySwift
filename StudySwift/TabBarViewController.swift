@@ -7,23 +7,22 @@
 
 import UIKit
 
-class TabBarViewController: UIViewController {
+class TabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        let homeVc = HouseViewController.init()
+        let homeNav = BaseNavigationController.init(rootViewController: homeVc)
+        homeNav.tabBarItem = UITabBarItem.init(title: "首页", image: nil, selectedImage: nil)
+        
+        let disVc = DiscoverViewController.init()
+        let disNav = BaseNavigationController.init(rootViewController: disVc)
+        disNav.tabBarItem = UITabBarItem.init(title: "发现", image: nil, selectedImage: nil)
+        
+        let mineVc = MineViewController.init()
+        let mineNav = BaseNavigationController.init(rootViewController: mineVc)
+        mineNav.tabBarItem = UITabBarItem.init(title: "我的", image: nil, selectedImage: nil)
+        
+        self.viewControllers = [homeNav,disNav,mineNav]
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
