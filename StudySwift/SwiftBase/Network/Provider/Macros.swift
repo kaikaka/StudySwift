@@ -8,7 +8,7 @@ import Foundation
 
 struct Macros {
     static var apiServer: String {
-        return "www.xxx.com"
+        return "https://api.gotokeep.com"
     }
     
     static var debug: Bool {

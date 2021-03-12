@@ -43,7 +43,7 @@ extension UIView {
     }
 
     /// 设置view的高度
-    public var hegith: CGFloat {
+    public var height: CGFloat {
         set(newVal) {
             var frame = self.frame
             frame.size.height = newVal

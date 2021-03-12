@@ -1,12 +1,13 @@
 //
 //  MapTo.swift
-//  StudySwift
+//  Foowwphone
 //
-//  Created by Yoon on 2021/3/11.
+//  Created by Yoon on 2020/10/30.
+//  Copyright © 2020 Fooww. All rights reserved.
 //
 
-import RxSwift
 import RxCocoa
+import RxSwift
 
 extension ObservableType {
 
