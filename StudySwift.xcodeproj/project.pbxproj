@@ -89,6 +89,8 @@
 		3C66358125EE00D900C16D15 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66358025EE00D900C16D15 /* DeviceExtensions.swift */; };
 		3C66358625EE025F00C16D15 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66358525EE025E00C16D15 /* UILabelExtensions.swift */; };
 		3C66358B25EE033F00C16D15 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66358A25EE033F00C16D15 /* OptionalExtensions.swift */; };
+		3C671C6925FEEED800E992F1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C671C6825FEEED800E992F1 /* DataModel.swift */; };
+		3C671C6F25FEF53400E992F1 /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C671C6E25FEF53400E992F1 /* ObservableViewController.swift */; };
 		3C69DB8525C3F2A5008214C3 /* HouseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */; };
 		3C6B803A25F4D38600FBCF9F /* ApiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B803925F4D38600FBCF9F /* ApiType.swift */; };
 		3C6B804225F4D57600FBCF9F /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B804125F4D57600FBCF9F /* Macros.swift */; };
@@ -228,6 +230,8 @@
 		3C66358025EE00D900C16D15 /* DeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
 		3C66358525EE025E00C16D15 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		3C66358A25EE033F00C16D15 /* OptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
+		3C671C6825FEEED800E992F1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		3C671C6E25FEF53400E992F1 /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
 		3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRouter.swift; sourceTree = "<group>"; };
 		3C6B803925F4D38600FBCF9F /* ApiType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiType.swift; sourceTree = "<group>"; };
 		3C6B804125F4D57600FBCF9F /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
@@ -471,6 +475,7 @@
 		3C44A0BD25A06C2900FCC10A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C671C6D25FEF52300E992F1 /* Observable */,
 				3C44A10C25A0706B00FCC10A /* MineViewController.swift */,
 			);
 			path = Controller;
@@ -479,6 +484,7 @@
 		3C44A0BE25A06C2900FCC10A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3C671C6825FEEED800E992F1 /* DataModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -640,6 +646,14 @@
 				3C84531C25EE218300D958FD /* DataExtensions.swift */,
 			);
 			path = Expand;
+			sourceTree = "<group>";
+		};
+		3C671C6D25FEF52300E992F1 /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				3C671C6E25FEF53400E992F1 /* ObservableViewController.swift */,
+			);
+			path = Observable;
 			sourceTree = "<group>";
 		};
 		3C6B803725F4CEFA00FBCF9F /* Network */ = {
@@ -1043,6 +1057,7 @@
 				3C44A10825A0705500FCC10A /* DiscoverViewController.swift in Sources */,
 				3C62C07A25FB10C500EE3CF4 /* UITableView+Rx.swift in Sources */,
 				3C62C08B25FB128000EE3CF4 /* ErrorTracker.swift in Sources */,
+				3C671C6925FEEED800E992F1 /* DataModel.swift in Sources */,
 				3C27670625F9FFC4004E3987 /* BaseResponseModelArray.swift in Sources */,
 				3C62C10F25FB378D00EE3CF4 /* Then.swift in Sources */,
 				3C8452FA25EE1DC300D958FD /* UIAlertControllerExtensions.swift in Sources */,
@@ -1058,6 +1073,7 @@
 				3C27666D25F9FDCC004E3987 /* TargetType+Rx.swift in Sources */,
 				3C27674825FA0A71004E3987 /* Reachability+Rx.swift in Sources */,
 				3C62C08025FB10C500EE3CF4 /* ViewModel.swift in Sources */,
+				3C671C6F25FEF53400E992F1 /* ObservableViewController.swift in Sources */,
 				3C62C07C25FB10C500EE3CF4 /* RefreshViewModel.swift in Sources */,
 				3C62C0FD25FB363900EE3CF4 /* HomePopularRootClass.swift in Sources */,
 				3C7B59EB25A1C334006DD208 /* AppRouter.swift in Sources */,
