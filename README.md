@@ -1,4 +1,4 @@
-# StudySwift
+# StudyRxSwift
 RxSwift 脚手架
 
 1. RxSwift + MVVM

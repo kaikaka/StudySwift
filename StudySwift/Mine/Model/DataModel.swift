@@ -14,5 +14,8 @@ struct DataModel {
 }
 
 struct DataListModel {
-    let data = Observable.just([DataModel(className: ObservableViewController.self, name: "Observable")])
+    let data = Observable.just([DataModel(className: ObservableViewController.self, name: "Observable"),
+                                DataModel(className: SubscribeViewController.self, name: "Subscribe"),
+                                DataModel(className: DoOnViewController.self, name: "DoOn"),
+                                DataModel(className: DisposeViewController.self, name: "Dispose")])
 }

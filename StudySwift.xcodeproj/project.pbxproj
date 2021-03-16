@@ -89,8 +89,11 @@
 		3C66358125EE00D900C16D15 /* DeviceExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66358025EE00D900C16D15 /* DeviceExtensions.swift */; };
 		3C66358625EE025F00C16D15 /* UILabelExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66358525EE025E00C16D15 /* UILabelExtensions.swift */; };
 		3C66358B25EE033F00C16D15 /* OptionalExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66358A25EE033F00C16D15 /* OptionalExtensions.swift */; };
+		3C670A3A260039960083B722 /* DoOnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C670A39260039960083B722 /* DoOnViewController.swift */; };
+		3C670A43260045090083B722 /* DisposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C670A42260045090083B722 /* DisposeViewController.swift */; };
 		3C671C6925FEEED800E992F1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C671C6825FEEED800E992F1 /* DataModel.swift */; };
 		3C671C6F25FEF53400E992F1 /* ObservableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C671C6E25FEF53400E992F1 /* ObservableViewController.swift */; };
+		3C671C7825FF68CD00E992F1 /* SubscribeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C671C7725FF68CD00E992F1 /* SubscribeViewController.swift */; };
 		3C69DB8525C3F2A5008214C3 /* HouseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */; };
 		3C6B803A25F4D38600FBCF9F /* ApiType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B803925F4D38600FBCF9F /* ApiType.swift */; };
 		3C6B804225F4D57600FBCF9F /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B804125F4D57600FBCF9F /* Macros.swift */; };
@@ -230,8 +233,11 @@
 		3C66358025EE00D900C16D15 /* DeviceExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceExtensions.swift; sourceTree = "<group>"; };
 		3C66358525EE025E00C16D15 /* UILabelExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelExtensions.swift; sourceTree = "<group>"; };
 		3C66358A25EE033F00C16D15 /* OptionalExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalExtensions.swift; sourceTree = "<group>"; };
+		3C670A39260039960083B722 /* DoOnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoOnViewController.swift; sourceTree = "<group>"; };
+		3C670A42260045090083B722 /* DisposeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisposeViewController.swift; sourceTree = "<group>"; };
 		3C671C6825FEEED800E992F1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		3C671C6E25FEF53400E992F1 /* ObservableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableViewController.swift; sourceTree = "<group>"; };
+		3C671C7725FF68CD00E992F1 /* SubscribeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeViewController.swift; sourceTree = "<group>"; };
 		3C69DB8425C3F2A5008214C3 /* HouseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRouter.swift; sourceTree = "<group>"; };
 		3C6B803925F4D38600FBCF9F /* ApiType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiType.swift; sourceTree = "<group>"; };
 		3C6B804125F4D57600FBCF9F /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
@@ -475,6 +481,9 @@
 		3C44A0BD25A06C2900FCC10A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C670A41260044F30083B722 /* Dispose */,
+				3C670A38260039650083B722 /* DoOn */,
+				3C671C7625FF688F00E992F1 /* Subscribe */,
 				3C671C6D25FEF52300E992F1 /* Observable */,
 				3C44A10C25A0706B00FCC10A /* MineViewController.swift */,
 			);
@@ -648,12 +657,36 @@
 			path = Expand;
 			sourceTree = "<group>";
 		};
+		3C670A38260039650083B722 /* DoOn */ = {
+			isa = PBXGroup;
+			children = (
+				3C670A39260039960083B722 /* DoOnViewController.swift */,
+			);
+			path = DoOn;
+			sourceTree = "<group>";
+		};
+		3C670A41260044F30083B722 /* Dispose */ = {
+			isa = PBXGroup;
+			children = (
+				3C670A42260045090083B722 /* DisposeViewController.swift */,
+			);
+			path = Dispose;
+			sourceTree = "<group>";
+		};
 		3C671C6D25FEF52300E992F1 /* Observable */ = {
 			isa = PBXGroup;
 			children = (
 				3C671C6E25FEF53400E992F1 /* ObservableViewController.swift */,
 			);
 			path = Observable;
+			sourceTree = "<group>";
+		};
+		3C671C7625FF688F00E992F1 /* Subscribe */ = {
+			isa = PBXGroup;
+			children = (
+				3C671C7725FF68CD00E992F1 /* SubscribeViewController.swift */,
+			);
+			path = Subscribe;
 			sourceTree = "<group>";
 		};
 		3C6B803725F4CEFA00FBCF9F /* Network */ = {
@@ -1042,6 +1075,8 @@
 				3C6B804825F4D6B200FBCF9F /* NetworkPlugin.swift in Sources */,
 				3C8452FF25EE1E0000D958FD /* UIControlExtensions.swift in Sources */,
 				3C27674925FA0A71004E3987 /* ObservableType+Reachability.swift in Sources */,
+				3C670A43260045090083B722 /* DisposeViewController.swift in Sources */,
+				3C671C7825FF68CD00E992F1 /* SubscribeViewController.swift in Sources */,
 				3C8451B325EE086200D958FD /* PlaceholderTextView.swift in Sources */,
 				3C62C0E225FB32E200EE3CF4 /* HomePopularLikeStatistic.swift in Sources */,
 				3C62C0DF25FB32E200EE3CF4 /* HomePopularEntry.swift in Sources */,
@@ -1067,6 +1102,7 @@
 				3C62C0F325FB358400EE3CF4 /* HomePopularSampleComment.swift in Sources */,
 				3C66356325EDE24700C16D15 /* UIColorExtensions.swift in Sources */,
 				3C27672025FA0304004E3987 /* TargetType+Cache.swift in Sources */,
+				3C670A3A260039960083B722 /* DoOnViewController.swift in Sources */,
 				3C62C0E525FB32E200EE3CF4 /* HomePopularGeoChannel.swift in Sources */,
 				3C62C07925FB10C500EE3CF4 /* UICollectionView+Rx.swift in Sources */,
 				3C27672E25FA07CB004E3987 /* ObservableType+ObjectMapper.swift in Sources */,

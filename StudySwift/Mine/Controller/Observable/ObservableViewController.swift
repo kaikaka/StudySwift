@@ -58,29 +58,29 @@ class ObservableViewController: UIViewController {
         }
         
         factory.subscribe { event in
-            print("\(isOdd)",event)
+            log.info("\(isOdd),\(event)")
         }
         
         factory.subscribe { event in
-            print("\(isOdd)",event)
+            log.info("\(isOdd),\(event)")
         }
         
         //12.interval 每间隔1秒生成一个元素
         let observable12 = Observable<Int>.interval(1, scheduler: MainScheduler.instance)
         observable12.subscribe {event in
-            print(event)
+            log.info(event)
         }
         
         //13.timer 创建一个经过设定的一段时间后，产生唯一的元素
         let observable13 = Observable<Int>.timer(3, scheduler: MainScheduler.instance)
         observable13.subscribe { (event) in
-            print(event)
+            log.info(event)
         }
         
         //就是经过设定一段时间，每隔一段时间产生一个元素 第一个参数就是等待5秒，第二个参数为每个1秒产生一个元素
         let observable14 = Observable<Int>.timer(5, period: 1, scheduler: MainScheduler.instance)
         observable14.subscribe { (event) in
-            print(event)
+            log.info(event)
         }
     }
 }
