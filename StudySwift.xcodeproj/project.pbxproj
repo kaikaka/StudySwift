@@ -77,6 +77,8 @@
 		3C62C10F25FB378D00EE3CF4 /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62C10E25FB378D00EE3CF4 /* Then.swift */; };
 		3C62C15B25FB6F9700EE3CF4 /* HUD+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62C15925FB6F9600EE3CF4 /* HUD+UIView.swift */; };
 		3C62C15C25FB6F9700EE3CF4 /* HUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C62C15A25FB6F9600EE3CF4 /* HUD.swift */; };
+		3C639055260192D100473B22 /* BindViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C639054260192D100473B22 /* BindViewController.swift */; };
+		3C63905E2601997A00473B22 /* UIExtensionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C63905D2601997A00473B22 /* UIExtensionViewController.swift */; };
 		3C64951B25C29B6600EDE84F /* UtilCoreNavigatorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */; };
 		3C64954425C2B21900EDE84F /* ToastExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64954325C2B21900EDE84F /* ToastExtensions.swift */; };
 		3C64954C25C2B53700EDE84F /* UtilCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64954B25C2B53700EDE84F /* UtilCore.swift */; };
@@ -221,6 +223,8 @@
 		3C62C10E25FB378D00EE3CF4 /* Then.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		3C62C15925FB6F9600EE3CF4 /* HUD+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HUD+UIView.swift"; sourceTree = "<group>"; };
 		3C62C15A25FB6F9600EE3CF4 /* HUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HUD.swift; sourceTree = "<group>"; };
+		3C639054260192D100473B22 /* BindViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindViewController.swift; sourceTree = "<group>"; };
+		3C63905D2601997A00473B22 /* UIExtensionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIExtensionViewController.swift; sourceTree = "<group>"; };
 		3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilCoreNavigatorMap.swift; sourceTree = "<group>"; };
 		3C64954325C2B21900EDE84F /* ToastExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastExtensions.swift; sourceTree = "<group>"; };
 		3C64954B25C2B53700EDE84F /* UtilCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilCore.swift; sourceTree = "<group>"; };
@@ -481,6 +485,8 @@
 		3C44A0BD25A06C2900FCC10A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C63905C2601990F00473B22 /* UIEx */,
+				3C639053260192AB00473B22 /* Bind */,
 				3C670A41260044F30083B722 /* Dispose */,
 				3C670A38260039650083B722 /* DoOn */,
 				3C671C7625FF688F00E992F1 /* Subscribe */,
@@ -607,6 +613,22 @@
 				3C62C15A25FB6F9600EE3CF4 /* HUD.swift */,
 			);
 			path = MBProgress;
+			sourceTree = "<group>";
+		};
+		3C639053260192AB00473B22 /* Bind */ = {
+			isa = PBXGroup;
+			children = (
+				3C639054260192D100473B22 /* BindViewController.swift */,
+			);
+			path = Bind;
+			sourceTree = "<group>";
+		};
+		3C63905C2601990F00473B22 /* UIEx */ = {
+			isa = PBXGroup;
+			children = (
+				3C63905D2601997A00473B22 /* UIExtensionViewController.swift */,
+			);
+			path = UIEx;
 			sourceTree = "<group>";
 		};
 		3C64951825C29B5A00EDE84F /* Util */ = {
@@ -1094,6 +1116,8 @@
 				3C62C08B25FB128000EE3CF4 /* ErrorTracker.swift in Sources */,
 				3C671C6925FEEED800E992F1 /* DataModel.swift in Sources */,
 				3C27670625F9FFC4004E3987 /* BaseResponseModelArray.swift in Sources */,
+				3C63905E2601997A00473B22 /* UIExtensionViewController.swift in Sources */,
+				3C639055260192D100473B22 /* BindViewController.swift in Sources */,
 				3C62C10F25FB378D00EE3CF4 /* Then.swift in Sources */,
 				3C8452FA25EE1DC300D958FD /* UIAlertControllerExtensions.swift in Sources */,
 				3C84531D25EE218300D958FD /* DataExtensions.swift in Sources */,
