@@ -1,5 +1,5 @@
 # StudyRxSwift
-RxSwift 脚手架
+RxSwift CLI
 
 1. RxSwift + MVVM
 2. Alamofire + Moya 请求
