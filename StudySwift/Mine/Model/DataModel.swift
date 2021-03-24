@@ -20,5 +20,6 @@ struct DataListModel {
                                 DataModel(className: DisposeViewController.self, name: "Dispose"),
                                 DataModel(className: BindViewController.self, name: "Bind"),
                                 DataModel(className: UIExtensionViewController.self, name: "UIExtension"),
-                                DataModel(className: SubjectsViewController.self, name: "Subjects")])
+                                DataModel(className: SubjectsViewController.self, name: "Subjects"),
+                                DataModel(className: TransformingViewController.self, name: "Transforming")])
 }

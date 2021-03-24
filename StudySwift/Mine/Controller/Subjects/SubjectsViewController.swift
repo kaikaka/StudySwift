@@ -17,6 +17,14 @@ class SubjectsViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.white
         self.title = "Subjects"
+        
+        self.publishSubject()
+        self.behaviorSubject()
+        self.replaySubject()
+        self.behaviorRelay()
+    }
+    
+    func publishSubject() {
         //1.PublishSubject 不需要默认值就可以创建
         let subject = PublishSubject<String>()
         //没有订阅 不会接收到元素
@@ -58,7 +66,9 @@ class SubjectsViewController: UIViewController {
         } onDisposed: {
             log.info("第三次订阅onDisposed")
         }
-        
+    }
+    
+    func behaviorSubject() {
         //2 BehaviorSubject需要一个默认值来创建
         let subject2 = BehaviorSubject(value: 111)
         subject2.subscribe { (event) in
@@ -71,7 +81,9 @@ class SubjectsViewController: UIViewController {
         subject2.subscribe { (event) in
             log.info("BehaviorSubject的第二次订阅 \(event)")
         }.disposed(by: disposeBag)
-        
+    }
+    
+    func replaySubject() {
         //3 ReplaySubject  buffersize
         
         let subject3 = ReplaySubject<String>.create(bufferSize: 2)
@@ -97,7 +109,9 @@ class SubjectsViewController: UIViewController {
         subject3.subscribe { (event) in
             log.info("ReplaySubject 第三次订阅\(event)")
         }.disposed(by: disposeBag)
-        
+    }
+    
+    func behaviorRelay() {
         //4 BehaviorRelay 它会把当前发出去的值保存为自己的状态 同时它会在销毁时自动发送 .complete 的 event,本身并没有 subscribe() , 内部是有一个 asObservable()
         let subject4 = BehaviorRelay(value: "11111")
         subject4.accept("2222")
