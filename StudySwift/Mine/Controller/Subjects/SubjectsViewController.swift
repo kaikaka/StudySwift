@@ -9,8 +9,14 @@ import UIKit
 import RxSwift
 import RxCocoa
 
+struct SubjectsDataListModel {
+    let data = Observable.just(["Publish","Behavior","Replay","BehaviorRelay"])
+}
+
 class SubjectsViewController: UIViewController {
 
+    let dataList = SubjectsDataListModel()
+    
     let disposeBag = DisposeBag()
     //Subject 即是订阅者也是Observable
     override func viewDidLoad() {
@@ -18,10 +24,29 @@ class SubjectsViewController: UIViewController {
         self.view.backgroundColor = UIColor.white
         self.title = "Subjects"
         
-        self.publishSubject()
-        self.behaviorSubject()
-        self.replaySubject()
-        self.behaviorRelay()
+        let tableView = UITableView.init(frame: self.view.bounds)
+        self.view.addSubview(tableView)
+        tableView.register(UITableViewCell.self, forCellReuseIdentifier: "myCell")
+        dataList.data.bind(to: tableView.rx.items(cellIdentifier: "myCell")) { _ , model,cell in
+            cell.textLabel?.text = model
+        }.disposed(by: disposeBag)
+        
+        tableView.rx.modelSelected(String.self).subscribe ({ (event) in
+            if let name = event.element {
+                switch name {
+                case "Publish":
+                    self.publishSubject()
+                case "Behavior":
+                    self.behaviorSubject()
+                case "Replay":
+                    self.replaySubject()
+                case "BehaviorRelay":
+                    self.behaviorRelay()
+                default:
+                    break
+                }
+            }
+        }).disposed(by: disposeBag)
     }
     
     func publishSubject() {

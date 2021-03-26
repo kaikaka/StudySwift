@@ -12,7 +12,7 @@ import RxSwift
 struct TransDataListModel {
     let data = Observable.just(["Buffer","Window","Map","FlatMap","FlatMapLatest","ConcatMap","Scan","GroupBy"])
 }
-
+//变化操作符
 class TransformingViewController: UIViewController {
 
     let disposeBag = DisposeBag()
@@ -164,15 +164,15 @@ class TransformingViewController: UIViewController {
         let subject1 = BehaviorSubject(value: "A")
         let subject2 = BehaviorSubject(value: "1")
         
-        let variable = BehaviorRelay(value:subject1)
+        let behaviorRelay = BehaviorRelay(value:subject1)
         
-        variable.asObservable()
+        behaviorRelay.asObservable()
             .flatMapLatest { $0 }
-            .subscribe(onNext: { print($0) })
+            .subscribe(onNext: { log.info($0) })
             .disposed(by: disposeBag)
         
         subject1.onNext("B")
-        variable.accept(subject2)
+        behaviorRelay.accept(subject2)
         subject2.onNext("2")
         subject1.onNext("C")
     }
@@ -183,18 +183,20 @@ class TransformingViewController: UIViewController {
         let subject1 = BehaviorSubject(value: "A")
         let subject2 = BehaviorSubject(value: "1")
         
-        let variable = Variable(subject1)
+        let behaviorRelay = BehaviorRelay(value:subject1)
         
-        variable.asObservable()
+        behaviorRelay.asObservable()
             .concatMap { $0 }
-            .subscribe(onNext: { print($0) })
+            .subscribe(onNext: { log.info($0) })
             .disposed(by: disposeBag)
         
         subject1.onNext("B")
-        variable.value = subject2
         subject2.onNext("2")
-        subject1.onNext("C")
         subject1.onCompleted() //只有前一个序列结束后，才能接收下一个序列
+        behaviorRelay.accept(subject2)//注意这里，只会发送当前Observable的最后一个元素
+        subject2.onNext("3")
+        subject1.onNext("C")
+        
     }
     
     func testScan() {
@@ -205,7 +207,7 @@ class TransformingViewController: UIViewController {
             .scan(0) { acum, elem in
                 acum + elem
             }
-            .subscribe(onNext: { print($0) })
+            .subscribe(onNext: { log.debug($0) })
             .disposed(by: disposeBag)
         
     }
@@ -222,10 +224,10 @@ class TransformingViewController: UIViewController {
                 switch event {
                 case .next(let group):
                     group.asObservable().subscribe({ (event) in
-                        print("key：\(group.key)    event：\(event)")
+                        log.debug("key：\(group.key)    event：\(event)")
                     }).disposed(by: self.disposeBag)
                 default:
-                    print("")
+                    log.debug("")
                 }
             }
             .disposed(by: disposeBag)
