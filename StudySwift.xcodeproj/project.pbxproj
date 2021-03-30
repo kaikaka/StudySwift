@@ -108,6 +108,10 @@
 		3C6B804225F4D57600FBCF9F /* Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B804125F4D57600FBCF9F /* Macros.swift */; };
 		3C6B804825F4D6B200FBCF9F /* NetworkPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B804725F4D6B200FBCF9F /* NetworkPlugin.swift */; };
 		3C6B805125F4D8F700FBCF9F /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C6B805025F4D8F700FBCF9F /* Logger.swift */; };
+		3C72CE6C2612F8CF0061E9CE /* ErrorHandlingOperatorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72CE6B2612F8CF0061E9CE /* ErrorHandlingOperatorsViewController.swift */; };
+		3C72CE722612FB270061E9CE /* DebugViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72CE712612FB270061E9CE /* DebugViewController.swift */; };
+		3C72CE7B2612FD1F0061E9CE /* TraitsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72CE7A2612FD1F0061E9CE /* TraitsViewController.swift */; };
+		3C72CE842613023D0061E9CE /* DriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C72CE832613023D0061E9CE /* DriverViewController.swift */; };
 		3C7B59EB25A1C334006DD208 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C7B59EA25A1C334006DD208 /* AppRouter.swift */; };
 		3C8451B325EE086200D958FD /* PlaceholderTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8451B225EE086200D958FD /* PlaceholderTextView.swift */; };
 		3C8451B825EE0A1900D958FD /* RegexHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C8451B725EE0A1900D958FD /* RegexHelper.swift */; };
@@ -262,6 +266,10 @@
 		3C6B804125F4D57600FBCF9F /* Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Macros.swift; sourceTree = "<group>"; };
 		3C6B804725F4D6B200FBCF9F /* NetworkPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkPlugin.swift; sourceTree = "<group>"; };
 		3C6B805025F4D8F700FBCF9F /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		3C72CE6B2612F8CF0061E9CE /* ErrorHandlingOperatorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingOperatorsViewController.swift; sourceTree = "<group>"; };
+		3C72CE712612FB270061E9CE /* DebugViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugViewController.swift; sourceTree = "<group>"; };
+		3C72CE7A2612FD1F0061E9CE /* TraitsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitsViewController.swift; sourceTree = "<group>"; };
+		3C72CE832613023D0061E9CE /* DriverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriverViewController.swift; sourceTree = "<group>"; };
 		3C7B59EA25A1C334006DD208 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
 		3C8451B225EE086200D958FD /* PlaceholderTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTextView.swift; sourceTree = "<group>"; };
 		3C8451B725EE0A1900D958FD /* RegexHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegexHelper.swift; sourceTree = "<group>"; };
@@ -501,6 +509,10 @@
 		3C44A0BD25A06C2900FCC10A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C72CE82261302160061E9CE /* Driver */,
+				3C72CE792612FD010061E9CE /* Traits */,
+				3C72CE702612FB110061E9CE /* Debug */,
+				3C72CE6A2612F8A60061E9CE /* ErrorHandling */,
 				3C636103260DE13700CDAA6B /* UtilityOperators */,
 				3C6360FA260DC90D00CDAA6B /* Connectable */,
 				3C6360F1260DC68600CDAA6B /* MathematicalAggregateOperators */,
@@ -840,6 +852,38 @@
 			path = Tool;
 			sourceTree = "<group>";
 		};
+		3C72CE6A2612F8A60061E9CE /* ErrorHandling */ = {
+			isa = PBXGroup;
+			children = (
+				3C72CE6B2612F8CF0061E9CE /* ErrorHandlingOperatorsViewController.swift */,
+			);
+			path = ErrorHandling;
+			sourceTree = "<group>";
+		};
+		3C72CE702612FB110061E9CE /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3C72CE712612FB270061E9CE /* DebugViewController.swift */,
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		3C72CE792612FD010061E9CE /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				3C72CE7A2612FD1F0061E9CE /* TraitsViewController.swift */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		3C72CE82261302160061E9CE /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				3C72CE832613023D0061E9CE /* DriverViewController.swift */,
+			);
+			path = Driver;
+			sourceTree = "<group>";
+		};
 		3C7B59E925A1C319006DD208 /* Router */ = {
 			isa = PBXGroup;
 			children = (
@@ -1167,6 +1211,7 @@
 				3C44A06825A06B4D00FCC10A /* AppDelegate.swift in Sources */,
 				3C27666825F9F9F2004E3987 /* Configuration.swift in Sources */,
 				3C62C07F25FB10C500EE3CF4 /* UIViewController+Rx.swift in Sources */,
+				3C72CE6C2612F8CF0061E9CE /* ErrorHandlingOperatorsViewController.swift in Sources */,
 				3C8452B925EE1B3C00D958FD /* KrRuntimeExtensions.swift in Sources */,
 				3C27674725FA0A71004E3987 /* Reachability.swift in Sources */,
 				3C27675625FA0C13004E3987 /* MapTo.swift in Sources */,
@@ -1176,11 +1221,13 @@
 				3C44A10325A0704600FCC10A /* HouseViewController.swift in Sources */,
 				3C62C10225FB367E00EE3CF4 /* HomeApi.swift in Sources */,
 				3C27672125FA0304004E3987 /* Expirable.swift in Sources */,
+				3C72CE842613023D0061E9CE /* DriverViewController.swift in Sources */,
 				3C62C0F825FB358C00EE3CF4 /* HomePopularShareTargetEntry.swift in Sources */,
 				3C27674B25FA0A71004E3987 /* MJRefreshComponent+Rx.swift in Sources */,
 				3C84520825EE16AA00D958FD /* KrUIImageExtensions.swift in Sources */,
 				3C27668925F9FE4D004E3987 /* Network+Cache.swift in Sources */,
 				3C62C15B25FB6F9700EE3CF4 /* HUD+UIView.swift in Sources */,
+				3C72CE7B2612FD1F0061E9CE /* TraitsViewController.swift in Sources */,
 				3C4C25A926032094006EBB5F /* SubjectsViewController.swift in Sources */,
 				3C27672225FA0304004E3987 /* Expiry.swift in Sources */,
 				3C66357725EDE9F800C16D15 /* KrUIButtonExtensions.swift in Sources */,
@@ -1208,6 +1255,7 @@
 				3C6B803A25F4D38600FBCF9F /* ApiType.swift in Sources */,
 				3C27672925FA0319004E3987 /* Observable+Extension.swift in Sources */,
 				3C44A10825A0705500FCC10A /* DiscoverViewController.swift in Sources */,
+				3C72CE722612FB270061E9CE /* DebugViewController.swift in Sources */,
 				3C62C07A25FB10C500EE3CF4 /* UITableView+Rx.swift in Sources */,
 				3C62C08B25FB128000EE3CF4 /* ErrorTracker.swift in Sources */,
 				3C671C6925FEEED800E992F1 /* DataModel.swift in Sources */,

@@ -27,5 +27,9 @@ struct DataListModel {
                                 DataModel(className: CombiningViewController.self, name: "Combining 结合操作符"),
                                 DataModel(className: MathematicalAggregateOperatorsViewController.self, name: "MathematicalAggregateOperators 算术聚合操作符"),
                                 DataModel(className: ConnectableViewController.self, name: "Connectable 连接操作符"),
-                                DataModel(className: UtilityOperatorsViewController.self, name: "UtilityOperators 其他操作符")])
+                                DataModel(className: UtilityOperatorsViewController.self, name: "UtilityOperators 其他操作符"),
+                                DataModel(className: ErrorHandlingOperatorsViewController.self, name: "ErrorHandlingOperators 错误处理"),
+                                DataModel(className: DebugViewController.self, name: "Debug 调试操作符"),
+                                DataModel(className: TraitsViewController.self, name: "Traits 特征序列"),
+                                DataModel(className: DriverViewController.self, name: "Driver 特征序列")])
 }
