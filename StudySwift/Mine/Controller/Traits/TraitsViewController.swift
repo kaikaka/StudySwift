@@ -184,14 +184,12 @@ class TraitsViewController: UIViewController {
  */
 public func getPlaylist(_ channel: String) -> Single<[String: Any]> {
     return Single<[String: Any]>.create { single in
-        let url = "https://fm.douban.com/j/mine/playlist?"
-            + "type=n&channel=\(channel)&from=mainsite"
+        let url = "https://api.gotokeep.com/feed/v1/feed/list?feedType=hot&lastId=&needCommentInfo=1&needFavoriteInfo=1&needLikeInfo=1&needRelationInfo=1&position=\(channel)&sort=byTime"
         let task = URLSession.shared.dataTask(with: URL(string: url)!) { data, _, error in
             if let error = error {
                 single(.error(error))
                 return
             }
-
             guard let data = data,
                   let json = try? JSONSerialization.jsonObject(with: data,
                                                                options: .mutableLeaves),

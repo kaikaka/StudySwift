@@ -130,7 +130,7 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
 
-  /// This `R.image` struct is generated, and contains static references to 8 images.
+  /// This `R.image` struct is generated, and contains static references to 10 images.
   struct image {
     /// Image `category_selected`.
     static let category_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "category_selected")
@@ -144,6 +144,10 @@ struct R: Rswift.Validatable {
     static let home_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "home_selected")
     /// Image `home_unselected`.
     static let home_unselected = Rswift.ImageResource(bundle: R.hostingBundle, name: "home_unselected")
+    /// Image `img_operation_failure`.
+    static let img_operation_failure = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_operation_failure")
+    /// Image `img_operation_success`.
+    static let img_operation_success = Rswift.ImageResource(bundle: R.hostingBundle, name: "img_operation_success")
     /// Image `me_selected`.
     static let me_selected = Rswift.ImageResource(bundle: R.hostingBundle, name: "me_selected")
     /// Image `me_unselected`.
@@ -188,6 +192,20 @@ struct R: Rswift.Validatable {
     /// `UIImage(named: "home_unselected", bundle: ..., traitCollection: ...)`
     static func home_unselected(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
       return UIKit.UIImage(resource: R.image.home_unselected, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "img_operation_failure", bundle: ..., traitCollection: ...)`
+    static func img_operation_failure(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_operation_failure, compatibleWith: traitCollection)
+    }
+    #endif
+
+    #if os(iOS) || os(tvOS)
+    /// `UIImage(named: "img_operation_success", bundle: ..., traitCollection: ...)`
+    static func img_operation_success(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.img_operation_success, compatibleWith: traitCollection)
     }
     #endif
 

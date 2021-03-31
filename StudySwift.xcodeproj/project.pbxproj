@@ -89,6 +89,21 @@
 		3C64951B25C29B6600EDE84F /* UtilCoreNavigatorMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */; };
 		3C64954425C2B21900EDE84F /* KrToastExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64954325C2B21900EDE84F /* KrToastExtensions.swift */; };
 		3C64954C25C2B53700EDE84F /* UtilCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C64954B25C2B53700EDE84F /* UtilCore.swift */; };
+		3C65FC3F26140C1200B2AC93 /* ControlPropertyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC3E26140C1200B2AC93 /* ControlPropertyViewController.swift */; };
+		3C65FC482614117200B2AC93 /* SchedulersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC472614117200B2AC93 /* SchedulersViewController.swift */; };
+		3C65FC51261417F700B2AC93 /* UILabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC50261417F700B2AC93 /* UILabelViewController.swift */; };
+		3C65FC5A2614190800B2AC93 /* TextViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC592614190800B2AC93 /* TextViewController.swift */; };
+		3C65FC6626141B2A00B2AC93 /* UIButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC6526141B2A00B2AC93 /* UIButtonViewController.swift */; };
+		3C65FC6F26141C2500B2AC93 /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC6E26141C2500B2AC93 /* SwitchViewController.swift */; };
+		3C65FC7826141D6900B2AC93 /* UIActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC7726141D6900B2AC93 /* UIActivityIndicatorViewController.swift */; };
+		3C65FC7E26141F0A00B2AC93 /* UISliderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC7D26141F0A00B2AC93 /* UISliderViewController.swift */; };
+		3C65FC8726141FE500B2AC93 /* BidirectionalDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC8626141FE500B2AC93 /* BidirectionalDataViewController.swift */; };
+		3C65FC8C261420CF00B2AC93 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC8B261420CF00B2AC93 /* Operators.swift */; };
+		3C65FC91261421EC00B2AC93 /* UIGestureRecognizerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC90261421EC00B2AC93 /* UIGestureRecognizerViewController.swift */; };
+		3C65FC9B261422F400B2AC93 /* UIDatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FC9A261422F400B2AC93 /* UIDatePickerViewController.swift */; };
+		3C65FCA4261423A900B2AC93 /* UISearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FCA3261423A900B2AC93 /* UISearchBarViewController.swift */; };
+		3C65FCAD2614247500B2AC93 /* TableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FCAC2614247500B2AC93 /* TableListViewController.swift */; };
+		3C65FCB82614257800B2AC93 /* TableDataSourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C65FCB72614257800B2AC93 /* TableDataSourcesViewController.swift */; };
 		3C66356325EDE24700C16D15 /* KrUIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66356225EDE24700C16D15 /* KrUIColorExtensions.swift */; };
 		3C66356825EDE31200C16D15 /* KrArrayExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66356725EDE31200C16D15 /* KrArrayExtensions.swift */; };
 		3C66356D25EDE44E00C16D15 /* KrUIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C66356C25EDE44E00C16D15 /* KrUIViewExtensions.swift */; };
@@ -247,6 +262,21 @@
 		3C64951A25C29B6600EDE84F /* UtilCoreNavigatorMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilCoreNavigatorMap.swift; sourceTree = "<group>"; };
 		3C64954325C2B21900EDE84F /* KrToastExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrToastExtensions.swift; sourceTree = "<group>"; };
 		3C64954B25C2B53700EDE84F /* UtilCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UtilCore.swift; sourceTree = "<group>"; };
+		3C65FC3E26140C1200B2AC93 /* ControlPropertyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPropertyViewController.swift; sourceTree = "<group>"; };
+		3C65FC472614117200B2AC93 /* SchedulersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulersViewController.swift; sourceTree = "<group>"; };
+		3C65FC50261417F700B2AC93 /* UILabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabelViewController.swift; sourceTree = "<group>"; };
+		3C65FC592614190800B2AC93 /* TextViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewController.swift; sourceTree = "<group>"; };
+		3C65FC6526141B2A00B2AC93 /* UIButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonViewController.swift; sourceTree = "<group>"; };
+		3C65FC6E26141C2500B2AC93 /* SwitchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
+		3C65FC7726141D6900B2AC93 /* UIActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		3C65FC7D26141F0A00B2AC93 /* UISliderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderViewController.swift; sourceTree = "<group>"; };
+		3C65FC8626141FE500B2AC93 /* BidirectionalDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BidirectionalDataViewController.swift; sourceTree = "<group>"; };
+		3C65FC8B261420CF00B2AC93 /* Operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operators.swift; sourceTree = "<group>"; };
+		3C65FC90261421EC00B2AC93 /* UIGestureRecognizerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIGestureRecognizerViewController.swift; sourceTree = "<group>"; };
+		3C65FC9A261422F400B2AC93 /* UIDatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIDatePickerViewController.swift; sourceTree = "<group>"; };
+		3C65FCA3261423A900B2AC93 /* UISearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISearchBarViewController.swift; sourceTree = "<group>"; };
+		3C65FCAC2614247500B2AC93 /* TableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableListViewController.swift; sourceTree = "<group>"; };
+		3C65FCB72614257800B2AC93 /* TableDataSourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSourcesViewController.swift; sourceTree = "<group>"; };
 		3C66356225EDE24700C16D15 /* KrUIColorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrUIColorExtensions.swift; sourceTree = "<group>"; };
 		3C66356725EDE31200C16D15 /* KrArrayExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrArrayExtensions.swift; sourceTree = "<group>"; };
 		3C66356C25EDE44E00C16D15 /* KrUIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KrUIViewExtensions.swift; sourceTree = "<group>"; };
@@ -509,6 +539,19 @@
 		3C44A0BD25A06C2900FCC10A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3C65FCAB2614245D00B2AC93 /* TableView */,
+				3C65FCA2261423A200B2AC93 /* UISearchBar */,
+				3C65FC99261422E700B2AC93 /* UIDatePicker */,
+				3C65FC95261421FA00B2AC93 /* UIGestureRecognizer */,
+				3C65FC8526141FD400B2AC93 /* BidirectionalData */,
+				3C65FC7C26141EF700B2AC93 /* UISlider */,
+				3C65FC7626141D4400B2AC93 /* UIActivityIndicator */,
+				3C65FC6D26141C1400B2AC93 /* UISwitch */,
+				3C65FC6426141B1300B2AC93 /* UIButton */,
+				3C65FC58261418DD00B2AC93 /* UITextView */,
+				3C65FC4F2614157D00B2AC93 /* UILabel */,
+				3C65FC462614113C00B2AC93 /* Schedulers */,
+				3C65FC3D26140BED00B2AC93 /* ControlProperty */,
 				3C72CE82261302160061E9CE /* Driver */,
 				3C72CE792612FD010061E9CE /* Traits */,
 				3C72CE702612FB110061E9CE /* Debug */,
@@ -769,6 +812,112 @@
 				3C84531C25EE218300D958FD /* KrDataExtensions.swift */,
 			);
 			path = Expand;
+			sourceTree = "<group>";
+		};
+		3C65FC3D26140BED00B2AC93 /* ControlProperty */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC3E26140C1200B2AC93 /* ControlPropertyViewController.swift */,
+			);
+			path = ControlProperty;
+			sourceTree = "<group>";
+		};
+		3C65FC462614113C00B2AC93 /* Schedulers */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC472614117200B2AC93 /* SchedulersViewController.swift */,
+			);
+			path = Schedulers;
+			sourceTree = "<group>";
+		};
+		3C65FC4F2614157D00B2AC93 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC50261417F700B2AC93 /* UILabelViewController.swift */,
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		3C65FC58261418DD00B2AC93 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC592614190800B2AC93 /* TextViewController.swift */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		3C65FC6426141B1300B2AC93 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC6526141B2A00B2AC93 /* UIButtonViewController.swift */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		3C65FC6D26141C1400B2AC93 /* UISwitch */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC6E26141C2500B2AC93 /* SwitchViewController.swift */,
+			);
+			path = UISwitch;
+			sourceTree = "<group>";
+		};
+		3C65FC7626141D4400B2AC93 /* UIActivityIndicator */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC7726141D6900B2AC93 /* UIActivityIndicatorViewController.swift */,
+			);
+			path = UIActivityIndicator;
+			sourceTree = "<group>";
+		};
+		3C65FC7C26141EF700B2AC93 /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC7D26141F0A00B2AC93 /* UISliderViewController.swift */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
+		3C65FC8526141FD400B2AC93 /* BidirectionalData */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC8B261420CF00B2AC93 /* Operators.swift */,
+				3C65FC8626141FE500B2AC93 /* BidirectionalDataViewController.swift */,
+			);
+			path = BidirectionalData;
+			sourceTree = "<group>";
+		};
+		3C65FC95261421FA00B2AC93 /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC90261421EC00B2AC93 /* UIGestureRecognizerViewController.swift */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		3C65FC99261422E700B2AC93 /* UIDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FC9A261422F400B2AC93 /* UIDatePickerViewController.swift */,
+			);
+			path = UIDatePicker;
+			sourceTree = "<group>";
+		};
+		3C65FCA2261423A200B2AC93 /* UISearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FCA3261423A900B2AC93 /* UISearchBarViewController.swift */,
+			);
+			path = UISearchBar;
+			sourceTree = "<group>";
+		};
+		3C65FCAB2614245D00B2AC93 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				3C65FCAC2614247500B2AC93 /* TableListViewController.swift */,
+				3C65FCB72614257800B2AC93 /* TableDataSourcesViewController.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 		3C670A38260039650083B722 /* DoOn */ = {
@@ -1184,7 +1333,9 @@
 				3C66356D25EDE44E00C16D15 /* KrUIViewExtensions.swift in Sources */,
 				3C62C0E125FB32E200EE3CF4 /* HomePopularMeta.swift in Sources */,
 				3C27673325FA0828004E3987 /* Single+ObjectMapper.swift in Sources */,
+				3C65FC7826141D6900B2AC93 /* UIActivityIndicatorViewController.swift in Sources */,
 				3C8451BD25EE0B5700D958FD /* KrUITextFieldExtensions.swift in Sources */,
+				3C65FC6626141B2A00B2AC93 /* UIButtonViewController.swift in Sources */,
 				3C52CA9025ECE32B00913CC7 /* BaseNavigationController.swift in Sources */,
 				3C62C0E325FB32E200EE3CF4 /* HomePopularItem.swift in Sources */,
 				3C27671F25FA0304004E3987 /* CachingKey+Moya.swift in Sources */,
@@ -1217,7 +1368,9 @@
 				3C27675625FA0C13004E3987 /* MapTo.swift in Sources */,
 				3C6360F3260DC69300CDAA6B /* MathematicalAggregateOperatorsViewController.swift in Sources */,
 				3C62C07825FB10C500EE3CF4 /* ViewModelable.swift in Sources */,
+				3C65FC6F26141C2500B2AC93 /* SwitchViewController.swift in Sources */,
 				3C84530E25EE1FB300D958FD /* KrDictionaryExtensions.swift in Sources */,
+				3C65FC482614117200B2AC93 /* SchedulersViewController.swift in Sources */,
 				3C44A10325A0704600FCC10A /* HouseViewController.swift in Sources */,
 				3C62C10225FB367E00EE3CF4 /* HomeApi.swift in Sources */,
 				3C27672125FA0304004E3987 /* Expirable.swift in Sources */,
@@ -1227,19 +1380,23 @@
 				3C84520825EE16AA00D958FD /* KrUIImageExtensions.swift in Sources */,
 				3C27668925F9FE4D004E3987 /* Network+Cache.swift in Sources */,
 				3C62C15B25FB6F9700EE3CF4 /* HUD+UIView.swift in Sources */,
+				3C65FC8726141FE500B2AC93 /* BidirectionalDataViewController.swift in Sources */,
 				3C72CE7B2612FD1F0061E9CE /* TraitsViewController.swift in Sources */,
 				3C4C25A926032094006EBB5F /* SubjectsViewController.swift in Sources */,
 				3C27672225FA0304004E3987 /* Expiry.swift in Sources */,
 				3C66357725EDE9F800C16D15 /* KrUIButtonExtensions.swift in Sources */,
 				3C27665E25F9E69E004E3987 /* BaseResponseModel.swift in Sources */,
 				3C62C0E425FB32E200EE3CF4 /* HomePopularPayload.swift in Sources */,
+				3C65FC9B261422F400B2AC93 /* UIDatePickerViewController.swift in Sources */,
 				3C6B804825F4D6B200FBCF9F /* NetworkPlugin.swift in Sources */,
 				3C8452FF25EE1E0000D958FD /* KrUIControlExtensions.swift in Sources */,
 				3C27674925FA0A71004E3987 /* ObservableType+Reachability.swift in Sources */,
 				3C670A43260045090083B722 /* DisposeViewController.swift in Sources */,
+				3C65FC7E26141F0A00B2AC93 /* UISliderViewController.swift in Sources */,
 				3C671C7825FF68CD00E992F1 /* SubscribeViewController.swift in Sources */,
 				3C8451B325EE086200D958FD /* PlaceholderTextView.swift in Sources */,
 				3C62C0E225FB32E200EE3CF4 /* HomePopularLikeStatistic.swift in Sources */,
+				3C65FC3F26140C1200B2AC93 /* ControlPropertyViewController.swift in Sources */,
 				3C62C0DF25FB32E200EE3CF4 /* HomePopularEntry.swift in Sources */,
 				3C6360FC260DC91800CDAA6B /* ConnectableViewController.swift in Sources */,
 				3C27671E25FA0304004E3987 /* Observable+Cache.swift in Sources */,
@@ -1251,6 +1408,7 @@
 				3C6360EA260DC3DA00CDAA6B /* CombiningViewController.swift in Sources */,
 				3C84530425EE1E3400D958FD /* KrDispatchExtensions.swift in Sources */,
 				3C6B805125F4D8F700FBCF9F /* Logger.swift in Sources */,
+				3C65FCA4261423A900B2AC93 /* UISearchBarViewController.swift in Sources */,
 				3C8451C225EE0E2D00D958FD /* KrDateExtensions.swift in Sources */,
 				3C6B803A25F4D38600FBCF9F /* ApiType.swift in Sources */,
 				3C27672925FA0319004E3987 /* Observable+Extension.swift in Sources */,
@@ -1278,13 +1436,17 @@
 				3C27674825FA0A71004E3987 /* Reachability+Rx.swift in Sources */,
 				3C62C08025FB10C500EE3CF4 /* ViewModel.swift in Sources */,
 				3C671C6F25FEF53400E992F1 /* ObservableViewController.swift in Sources */,
+				3C65FC91261421EC00B2AC93 /* UIGestureRecognizerViewController.swift in Sources */,
+				3C65FC8C261420CF00B2AC93 /* Operators.swift in Sources */,
 				3C62C07C25FB10C500EE3CF4 /* RefreshViewModel.swift in Sources */,
 				3C62C0FD25FB363900EE3CF4 /* HomePopularRootClass.swift in Sources */,
 				3C7B59EB25A1C334006DD208 /* AppRouter.swift in Sources */,
 				3C66358625EE025F00C16D15 /* KrUILabelExtensions.swift in Sources */,
 				3C27672425FA0304004E3987 /* StoringKey.swift in Sources */,
 				3C66357C25EDEA9E00C16D15 /* CountDown.swift in Sources */,
+				3C65FC51261417F700B2AC93 /* UILabelViewController.swift in Sources */,
 				3C44A12125A0760000FCC10A /* TabBarViewController.swift in Sources */,
+				3C65FCB82614257800B2AC93 /* TableDataSourcesViewController.swift in Sources */,
 				3C27666325F9F664004E3987 /* Network.swift in Sources */,
 				3C44A10D25A0706B00FCC10A /* MineViewController.swift in Sources */,
 				3C44A11C25A073B700FCC10A /* R.generated.swift in Sources */,
@@ -1294,7 +1456,9 @@
 				3C62C0CF25FB327900EE3CF4 /* PopularCollectionViewCell.swift in Sources */,
 				3C66358B25EE033F00C16D15 /* KrOptionalExtensions.swift in Sources */,
 				3C62C07D25FB10C500EE3CF4 /* CollectionViewController.swift in Sources */,
+				3C65FC5A2614190800B2AC93 /* TextViewController.swift in Sources */,
 				3C8451B825EE0A1900D958FD /* RegexHelper.swift in Sources */,
+				3C65FCAD2614247500B2AC93 /* TableListViewController.swift in Sources */,
 				3C84521A25EE18AF00D958FD /* KrUITapGestureRecognizerExtensions.swift in Sources */,
 				3C62C08625FB127200EE3CF4 /* ActivityIndicator.swift in Sources */,
 				3C6B804225F4D57600FBCF9F /* Macros.swift in Sources */,
