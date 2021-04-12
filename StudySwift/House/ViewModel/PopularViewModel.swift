@@ -9,6 +9,7 @@ import Foundation
 import RxCocoa
 import RxDataSources
 import RxSwift
+import ObjectMapper
 
 final class PopularViewModel: RefreshViewModel {
     // 记录当前的索引值

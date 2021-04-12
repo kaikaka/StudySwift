@@ -21,7 +21,7 @@ struct Macros {
     
     static var appId: String {
         let infoDictionary = Bundle.main.infoDictionary
-        if let appId = infoDictionary!["FWSoftID"] as? String {
+        if let appId = infoDictionary!["SoftID"] as? String {
             return appId
         }
         return "7"

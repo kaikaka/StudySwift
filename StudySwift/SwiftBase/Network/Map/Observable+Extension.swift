@@ -5,7 +5,7 @@
 //  Created by Yoon on 2021/3/11.
 //
 
-import Result
+//import Result
 import ObjectMapper
 import Moya
 import RxSwift
